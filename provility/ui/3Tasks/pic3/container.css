@@ -1,0 +1,84 @@
+button {
+  background-color: #17171ae7;
+  border: #17171ae7;
+  border-radius: 9px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+  top: 18%;
+  height: 20;
+}
+.bottom {
+  display: block;
+  border: 1px solid lightgray;
+  padding: 20px;
+  width: 180px;
+  height: 390px;
+  top: 55%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+}
+body {
+  width: 20px;
+
+  padding: 10px;
+}
+
+h1 {
+  font-family: "Times New Roman";
+  font-weight: 500;
+  color: rgb(13 13 13);
+  font-size: 18px;
+}
+.bottom b {
+  color: green;
+}
+.top1,
+.top2,
+.top3,
+.top4 {
+  display: inline-grid;
+  border: 1px solid lightgray;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 5px;
+  padding: 20px;
+  width: 180px;
+  height: 200px;
+  flex-direction: column;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  width: fit-content;
+}
+.col1,
+.col2,
+.col3,
+.col4 {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  width: fit-content;
+}
+p {
+  color: rgb(12, 9, 9);
+  font-size: 13px;
+}
+
+b {
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.adjust {
+  width: 3px;
+  height: 200px;
+}
