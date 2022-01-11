@@ -1,0 +1,4 @@
+<button class="mr-3 btn my-3" [ngClass]="getButtonClass(column)" (click)="onFilterbtnClick(column)"
+    *ngFor="let column of columns">
+    {{ column }}
+</button>

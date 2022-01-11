@@ -1,0 +1,26 @@
+<app-column-filter 
+(btnClicked)="onColumnFilterClick($event)"
+[columns]="columns" 
+[hiddenColumns]="hiddenColumns">
+</app-column-filter>
+
+{{clickedBook}}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <ng-container *ngFor="let column of columns">
+        <th *ngIf="isShown(column)">{{ column }}</th>
+      </ng-container>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books" (click)="onRowClick(book.title)">
+      <ng-container *ngFor="let column of columns">
+        <td *ngIf="isShown(column)">
+          <img *ngIf="isValidURL(book[column])" [src]="book[column]" />
+          <span *ngIf="!isValidURL(book[column])">{{ book[column] }}</span>
+        </td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,31 @@
+{
+  "name": "mini-project-2021",
+  "version": "1.0.0",
+  "description": "mini project for 2021 batch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "nodemon backend/server.js",
+    "frontend": "live-server --open=frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/provility/mini-project-2021.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.7",
+
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "author": "provility",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/provility/mini-project-2021/issues"
+  },
+  "homepage": "https://github.com/provility/mini-project-2021#readme"
+}
